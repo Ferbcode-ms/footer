@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: "Poppins", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #bbbbbb;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 20rem;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: #000000;
+    color: white;
+
+}
+
+footer>p {
+    color: #bbbbbb;
+}
+
+.min-foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+
+}
+
+.min-foot li {
+    list-style: none;
+    line-height: 2rem;
+    cursor: pointer;
+}
+
+.col-2,
+.col-3 {
+    flex: 0 0 15%;
+    margin: 10px 15px;
+
+}
+
+.col-1,
+.col-4 {
+    margin: 10px 15px;
+    padding: 10px 15px;
+    flex: 0 0 25%;
+}
+
+.col-1>div {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.col-1 img {
+    margin-right: 15px;
+}
+
+.col-1 p {
+    color: #bbbbbb;
+}
+
+.col-4 #email {
+    padding: 7px 7px;
+    margin: 10px 0px;
+    min-width: 80%;
+    border-radius: 10px;
+
+}
+
+.col-4 #btn {
+    padding: 7px 7px;
+    margin: 10px 0px;
+    width: 50%;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+#copyright {
+    font-size: small;
+}
+
+
+/* responsive */
+
+@media screen and (min-width:435px) and (max-width: 768px) {
+
+    .col-2,
+    .col-3 {
+        flex: 0 0 0%;
+        margin: 0 20px;
+        padding: 0;
+        font-size: small;
+
+    }
+
+    .col-1,
+    .col-4 {
+        flex: 0 0 0%;
+        margin: 0% 20px;
+        padding: 0;
+        font-size: small;
+
+    }
+
+    footer {
+        height: 18rem;
+    }
+
+    .min-foot {
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width:426px) {
+
+    footer {
+        height:auto;
+    }
+
+    .min-foot {
+        width: 80%;
+
+    }
+    .col-2,
+    .col-3 {
+        flex: 0 0 20%;
+        margin: 0px 10px;
+        padding: 0 5px;
+        font-size: small;
+
+    }
+
+    .col-1,
+    .col-4 {
+        flex: 0 0 50%;
+        margin-top: 10px;
+        padding: 10px;
+
+        font-size: small;
+
+    }
+    .min-foot li {
+       
+        line-height: 20px;
+      
+    }
+    .col-4 #email {
+        margin: 10px 0px;
+        min-width: 50%;
+
+    }
+}
